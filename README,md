@@ -1,0 +1,119 @@
+
+# Recipe Website Task
+
+## Project Overview
+This project is a **Recipe Website** that displays recipe details like preparation time, ingredients, images, and instructions. It uses modern technologies, focuses on clean code structure, and demonstrates dynamic data handling with API integration.
+
+The goal is to:
+1. Use **Next.js** for server-side rendering and page routing.
+2. Use **Material-UI** (MUI) for styling and component design.
+3. Handle dynamic data using Next.js best practices.
+4. Demonstrate **scalable and production-ready code**.
+
+---
+
+## Features
+- 🛠 **Next.js Setup**: Create pages with organized routing.
+- 🎨 **Material-UI Components**: Styled, responsive UI components.
+- 🔗 **Dynamic API Integration**: Simulated or real data passed to components.
+- 🚀 **Best Practices**: Code follows Next.js and TypeScript standards.
+- 🧪 **Scalability**: Clean folder structure, reusable components, and modular code.
+
+---
+
+## Tech Stack
+- **Frontend**: React.js, Next.js
+- **UI Library**: Material-UI (MUI)
+- **Language**: TypeScript
+- **API**: Dynamic Data (via local JSON or external APIs)
+
+---
+
+## Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-link>
+   cd recipe-website
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+5. **Start the production server**
+   ```bash
+   npm start
+   ```
+
+---
+
+## Folder Structure
+```
+/recipe-website
+├── public/                   # Static assets (images, icons)
+├── pages/                    # Next.js pages
+│   ├── index.tsx             # Home page
+│   ├── recipes/[id].tsx      # Dynamic recipe detail page
+├── components/               # Reusable components
+│   ├── Header.tsx            # Navigation header
+│   ├── RecipeCard.tsx        # Recipe card component
+│   ├── Layout.tsx            # Layout wrapper
+├── data/                     # API data (local JSON if no API)
+│   └── recipes.json          # Mock data for recipes
+├── styles/                   # Custom styles
+├── utils/                    # Helper functions (e.g., API handlers)
+├── README.md                 # Project documentation
+└── package.json              # Project configuration
+```
+
+---
+
+## Pages
+1. **Home Page (`/`)**  
+   - Displays a list of recipes with images, titles, and short descriptions.  
+   - Data is dynamically fetched from `recipes.json` or API.  
+   
+2. **Recipe Detail Page (`/recipes/[id]`)**  
+   - Displays full details for the selected recipe.  
+   - Uses Next.js dynamic routing and API integration.
+
+---
+
+## Key Highlights
+1. **Dynamic Data**  
+   Recipes are fetched dynamically using Next.js `getStaticProps` or `getServerSideProps`.
+
+2. **Material-UI**  
+   Components like **Cards**, **Typography**, and **Buttons** are styled using MUI.
+
+3. **Scalable Code**  
+   Modular components and proper folder structure ensure clean and maintainable code.
+
+4. **TypeScript Support**  
+   Type safety for cleaner and more robust code.
+
+---
+
+## Future Improvements
+- Add real-time API integration.
+- Implement search and filtering features.
+- Add unit tests using **Jest** and **React Testing Library**.
+
+---
+
+## How to Run
+Simply follow the setup instructions above, and visit `http://localhost:3000` in your browser.
+
+---
